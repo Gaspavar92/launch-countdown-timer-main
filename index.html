@@ -6,24 +6,26 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet">
   <script src="./script.js" defer></script>
   
   <title>Frontend Mentor | Launch countdown timer</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+<div class="background"></div>
+  <h1>WE'RE LAUNCHING SOON</h1> 
 
-  We're launching soon
+  <div class="countdown">
 
-  Days
-  Hours
-  Minutes
-  Seconds
+    <div class="days"> <span class="time1"></span> <p>Days</p> </div>
+    <div class="hours"> <span class="time2"></span> <p>Hours</p> </div>
+    <div class="minutes"> <span class="time3"></span> <p>Minutes</p> </div>
+    <div class="seconds"> <span class="time4"></span> <p>Seconds</p> </div>
+
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
