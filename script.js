@@ -53,18 +53,17 @@ setInterval(calculateTimeLeft, 1000);
 
 // Creating a function that will flip the card every time a change is detected
 
-secondsCard.addEventListener("click", () => {
-    secondsCard.classList.toggle("is-flipped")
-})
+const flipCard = () => {
+    secondsCard.classList.toggle("is-flipped");
+    if (secondsHtml.textContent == 59) {
+        minutesCard.classList.toggle("is-flipped");
+    }
+    if (minutesHtml.textContent == 59) {
+        hoursCard.classList.toggle("is-flipped");
+    }
+    if (hoursHtml.textContent == 59) {
+        daysCard.classList.toggle("is-flipped");
+    }
+}
 
-minutesCard.addEventListener("click", () => {
-    minutesCard.classList.toggle("is-flipped")
-})
-
-hoursCard.addEventListener("click", () => {
-    hoursCard.classList.toggle("is-flipped")
-})
-
-daysCard.addEventListener("click", () => {
-    daysCard.classList.toggle("is-flipped")
-})
+setInterval(flipCard, 1000);
