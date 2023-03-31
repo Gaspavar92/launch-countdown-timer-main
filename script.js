@@ -58,10 +58,10 @@ const flipCard = () => {
     if (secondsHtml.textContent == 59) {
         minutesCard.classList.toggle("is-flipped");
     }
-    if (minutesHtml.textContent == 59) {
+    if (minutesHtml.textContent == 59 && secondsHtml.textContent == 59) {
         hoursCard.classList.toggle("is-flipped");
     }
-    if (hoursHtml.textContent == 59) {
+    if (hoursHtml.textContent == 59 && minutesHtml.textContent == 59 && secondsHtml.textContent == 59) {
         daysCard.classList.toggle("is-flipped");
     }
 }
