@@ -72,7 +72,8 @@ h1 {
     width: 180px;
     transform: rotate3d(45deg, 45deg, 45deg, 45deg);
     border: 3px solid white;
-    position: absolute;}
+    position: absolute;
+}
 
 .time5, .time6, .time7, .time8 {
     transform: rotateY(360deg);

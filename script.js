@@ -22,7 +22,7 @@ const calculateTimeLeft = () => {
 
     // Getting current date and launch date
 
-    let launchDate = new Date("April 3, 2023 08:00:00").getTime();
+    let launchDate = new Date("June 31, 2023 08:00:00").getTime();
     let currentDate = new Date().getTime();
     let distance = launchDate - currentDate;
 
