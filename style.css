@@ -118,7 +118,7 @@ p {
 }
 
 .social-icons a:visited {
-    color: inherit;
+    color: hsl(237, 18%, 59%);;
 }
 
 @media (max-width: 760px) {
